@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+.grad-button {
+  background: linear-gradient(40deg,#ffd86f,#fc6262);
+  text-transform: uppercase;
+  font-size: .81rem;
+  padding: .84rem 2.14rem;
+  
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16);
+  color: #fff;
+  border-radius: 10em;
+  cursor: pointer;
+  margin: .375rem;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+.grad-button:hover {
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,.25);
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+}
