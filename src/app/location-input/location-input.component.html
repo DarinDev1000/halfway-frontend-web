@@ -1,0 +1,106 @@
+<div class="row">
+  
+  <div class="col-xs-12 col-md-6">
+    <h3>My Address</h3>
+    <div class="row">
+      <div class="col-12 form-group">
+        <label for="myAddress">Address</label>
+        <input 
+          type="text" 
+          id="myAddress" 
+          class="form-control" 
+          [(ngModel)]="myAddress">
+      </div>
+      <div class="col-12 form-group">
+        <label for="myZip">Zip</label>
+        <input 
+          type="text" 
+          id="myZip" 
+          class="form-control"
+          [(ngModel)]="myZip">
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <h3>Their Address</h3>
+
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <label for="theirAddress">Address</label>
+          <input 
+            type="text" 
+            id="theirAddress" 
+            class="form-control"
+            [(ngModel)]="theirAddress">
+        </div>
+        <div class="col-sm-12 form-group">
+          <label for="theirZip">Zip</label>
+          <input 
+            type="text" 
+            id="theirZip" 
+            class="form-control"
+            [(ngModel)]="theirZip">
+        </div>
+      </div>
+  </div>
+
+  <div class="col-12 col-md-6">
+    <h3>Filters</h3>
+    <div class="row">
+      <div class="col-sm-12">
+        
+        <label class="check">Coffee
+          <input 
+            type="checkbox" 
+            [(ngModel)]="coffee">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="check">Restaurant
+          <input 
+            type="checkbox" 
+            [(ngModel)]="restaurant">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="check">Fast Food
+          <input 
+            type="checkbox" 
+            [(ngModel)]="fastFood">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="check">Entertainment
+          <input 
+            type="checkbox" 
+            [(ngModel)]="entertainment">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="check">Parks
+          <input 
+            type="checkbox" 
+            [(ngModel)]="parks">
+          <span class="checkmark"></span>
+        </label>
+
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <button class="btn btn-success" type="submit" (click)="submitAddress()">Submit</button>
+  </div>
+  
+    
+</div>
+
+<br>
+<a href="{{mapLink}}">{{mapName}}</a>
+<hr>
+<br>
+<br>
+
+<app-map-route></app-map-route>
