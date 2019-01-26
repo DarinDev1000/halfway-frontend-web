@@ -7,14 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LocationInputComponent } from './location-input/location-input.component';
 import { MapRouteComponent } from './map-route/map-route.component';
-import { AgmCoreModule } from '@agm/core'            // @agm/core
-import { AgmDirectionModule } from 'agm-direction'   // agm-direction
+import { AgmCoreModule } from '@agm/core';            // @agm/core
+import { AgmDirectionModule } from 'agm-direction';
+import { GoogleMapComponent } from './google-map/google-map.component';   // agm-direction
 
 @NgModule({
   declarations: [
     AppComponent,
     LocationInputComponent,
-    MapRouteComponent
+    MapRouteComponent,
+    GoogleMapComponent
   ],
   imports: [
     BrowserModule,
