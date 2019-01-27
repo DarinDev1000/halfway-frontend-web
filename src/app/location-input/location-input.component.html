@@ -103,4 +103,13 @@
 <br>
 <br>
 
-<app-map-route></app-map-route>
+<!-- <app-map-route></app-map-route> -->
+<div *ngIf="show">
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng">
+      <agm-info-window>{{ meetingLocationName }}</agm-info-window>
+    </agm-marker>
+    <agm-direction [origin]="origin" [destination]="destination"></agm-direction>
+  </agm-map>  
+</div>
+
