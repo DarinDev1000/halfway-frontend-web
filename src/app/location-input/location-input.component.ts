@@ -26,6 +26,8 @@ export class LocationInputComponent implements OnInit {
   public destination: any;
 
   meetingLocationName;
+  yelpLink;
+  yelpRating;
 
   coffee = false;
   restaurant = false;
@@ -120,9 +122,14 @@ export class LocationInputComponent implements OnInit {
     const coordinates = businessData.coordinates;
     const rating = businessData.rating;
     const location = businessData.location;
+    const yelpURL = businessData.url;
     // const displayAddress = `${location.displayAddress.}+${location.displayAddress.\1}`;
     const displayAddress = businessData.location.display_address;
     console.log(displayAddress);
+
+    // Yelp
+    this.yelpRating = rating;
+    this.yelpLink = yelpURL;
 
     // Set map marker to business
     console.log(coordinates);
