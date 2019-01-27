@@ -52,6 +52,7 @@ export class LocationInputComponent implements OnInit {
   }
 
   submitAddress() {
+    this.show = false;
     if ( this.myAddress && this.myZip && this.theirAddress && this.theirZip ) {
 
       let categories = [];
@@ -142,8 +143,13 @@ export class LocationInputComponent implements OnInit {
     this.mapLink = mapURL;
     this.mapName = 'Route to Meeting Location';
 
+    this.refresh;
     this.show = true;
 
+  }
+
+  refresh(): void {
+    window.location.reload();
   }
 
 }
