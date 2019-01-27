@@ -16,6 +16,14 @@ export class LocationInputComponent implements OnInit {
   theirZip = '95356';
   // rest = new RestService;
 
+  lat: Number = 37.799448;
+  lng: Number = -120.979021;
+  zoom: Number = 8;
+
+  public origin: any;
+  public destination: any;
+
+
   coffee = false;
   restaurant = false;
   fastFood = false;
@@ -30,6 +38,12 @@ export class LocationInputComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.getDirection();
+  }
+
+  getDirection() {
+    this.origin = { lat: 37.799448, lng: -120.979021 };
+    this.destination = { lat: 37.799524, lng: -120.975017 };
   }
 
   submitAddress() {
