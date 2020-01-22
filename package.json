@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "echo '******************\nnode:' && node -v && echo 'If node > 8 run `nvm use` first \n******************\n' && ng serve",
     "build": "ng build -c=production; cd distG; rm -rf *; cp -R ../dist/halfway-frontend-web/. .; git add .; git commit -m 'updated'; git push;",
     "test": "ng test",
     "lint": "ng lint",
