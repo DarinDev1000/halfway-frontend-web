@@ -6,8 +6,8 @@ This program should calculate a driving route for 2 users if they want to meet i
 
 This program is still in development.
 
-![Frontend 1](https://https://github.com/DarinDev1000/halfway-frontend-web/images/frontend-1.png)
-![Frontend 2](https://https://github.com/DarinDev1000/halfway-frontend-web/images/frontend-2.png)
+![Frontend 1](https://raw.githubusercontent.com/DarinDev1000/halfway-frontend-web/master/images/frontend-1.png)
+![Frontend 2](https://raw.githubusercontent.com/DarinDev1000/halfway-frontend-web/master/images/frontend-2.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
